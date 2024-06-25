@@ -41,12 +41,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # If modifying these SCOPES, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 
-
-
-import pandas as pd
-import json
-import os
-
 def save_to_csv(data, filename="receipts.csv"):
     # Initialize an empty DataFrame to hold all the flattened data
     all_data = pd.DataFrame()
@@ -85,9 +79,6 @@ def save_to_csv(data, filename="receipts.csv"):
         all_data.to_csv(filename, mode='a', index=False, header=False)
 
     print(f"Data saved to {filename}")
-
-
-
 
 
 def extract_text_from_pdf(pdf_path):
