@@ -1,0 +1,7 @@
+pandas>=1.1.5
+pdfminer.six>=20201018
+google-auth>=1.35.0
+google-auth-oauthlib>=0.4.6
+google-api-python-client>=2.38.0
+requests>=2.26.0
+openai>=0.10.0
